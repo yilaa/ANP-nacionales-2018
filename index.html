@@ -330,7 +330,7 @@
           var color="#cc4c02";
           var opacidad=0.80;
           var circulo="#cc4c02";
-          } else if (parseFloat(feature.getProperty('Nacionales 2018'))>50000){
+          } else if (parseFloat(feature.getProperty('Nacionales 2018'))>10000){
           var color="#f2a13f ";
           var opacidad=1;
           var circulo="#f2a13f ";
@@ -362,7 +362,7 @@
       
       // Leyenda
       var legend = document.getElementById('legend');
-      legend.innerHTML = '<b>'+'<h1>Visitantes Nacionales 2018:</h1>'+'</b><br>'+'<i style="background:#a72461; opacity: 0.8"></i>'+'<span style="font-size:15px;">Mayor a 300,000</span>'+'</b><br></b><br>'+'<i style="background:#cc4c02; opacity: 0.8"></i>'+'<span style="font-size:15px;">Entre 100,00 a 200,00</span'+'</b><br></b><br>'+'<i style="background:#f2a13f; opacity: 0.95"></i>'+'<span style="font-size:15px;">Entre 50,000 a 100,000</span>'+'</b><br></b><br>'+'<i style="background:#f00; opacity: 0.5"></i>'+'<span style="font-size:15px;">Menor a 50,000</span>';
+      legend.innerHTML = '<b>'+'<h1>Visitantes Nacionales 2018:</h1>'+'</b><br>'+'<i style="background:#a72461; opacity: 0.8"></i>'+'<span style="font-size:15px;">Mayor a 300,000</span>'+'</b><br></b><br>'+'<i style="background:#cc4c02; opacity: 0.8"></i>'+'<span style="font-size:15px;">Entre 100,00 a 300,00</span'+'</b><br></b><br>'+'<i style="background:#f2a13f; opacity: 0.95"></i>'+'<span style="font-size:15px;">Entre 10,000 a 100,000</span>'+'</b><br></b><br>'+'<i style="background:#f00; opacity: 0.5"></i>'+'<span style="font-size:15px;">Menor a 10,000</span>';
       map.controls[google.maps.ControlPosition.LEFT_CENTER].push(legend);    
      
     }
